@@ -14,6 +14,8 @@ export default function AddTodo() {
     const newTodo = { id: uuid(), todo: target.value }
 
     dispatch(add(newTodo))
+
+    target.value = ""
   }
   return (
     <div>

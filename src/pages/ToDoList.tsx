@@ -1,7 +1,7 @@
 import { useAppSelector } from "../app/hooks"
 import ToDoItem from "../components/ToDoItem"
 import type { Todo } from "../store/features/Todos/toDosSlice"
-import AddTodo from "../components/addTodo"
+import AddTodo from "../components/AddTodo"
 
 export default function ToDoList() {
   const todos = useAppSelector(state => state.todos.value)
